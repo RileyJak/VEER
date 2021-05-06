@@ -1,0 +1,11 @@
+.logo {
+    font-size: 1.2rem;
+    margin: 2rem;
+    margin-left: 5px;
+    left: 0;
+    display: inline;
+}
+
+.header {
+    margin-top: .75rem;
+}
