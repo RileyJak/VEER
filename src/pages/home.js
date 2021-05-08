@@ -13,9 +13,10 @@ function Home() {
 			</div>
 
 			<div className="grid-home">
-				<Card title="Brittany" icon={pdf} doc={hold} />
-				<Card title="Susan" icon={pdf} doc={hold} />
-				<Card title="Prototype" icon={link} doc={hold} />
+				<Card title="Presentation Deck" icon={pdf} doc={hold} />
+				<Card title="Case Study" icon={pdf} doc={hold} />
+				<Card title="Prototype File" icon={link} doc={hold} />
+				<Card title="Prototype Video" icon={link} doc={hold} />
 			</div>
 		</div>
 	);
