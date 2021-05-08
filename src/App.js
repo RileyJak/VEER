@@ -4,7 +4,6 @@ import Header from "./common/header";
 import About from "./pages/about";
 import Design from "./pages/design";
 import Home from "./pages/home";
-import Presentations from "./pages/presentations";
 import Research from "./pages/research";
 import Testing from "./pages/testing";
 
@@ -27,9 +26,6 @@ function App() {
 				</Route>
 				<Route path="/about">
 					<About />
-				</Route>
-				<Route path="/presentations">
-					<Presentations />
 				</Route>
 			</Switch>
 		</BrowserRouter>

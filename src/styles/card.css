@@ -1,7 +1,7 @@
 .card {
     height: 3.1rem;
-    width: 15rem;
-    border: 2px solid black;
+    width: 18rem;
+    border: 2px solid #ff5e04;
     border-radius: 4px;
     padding: .2rem;
     transition: all .06s ease-in-out;
@@ -18,19 +18,20 @@
     margin-top: -11px;
     margin-left: -15px;
     margin-right: -5px;
+    fill: #ff5e04;
 }
 
 .name {
     text-decoration: none;
-    color: orange;
+    color: #422b67;
     font-size: 1.25rem;
-    text-align: center;
     font-weight: 700;
+    margin-bottom: 15px;
 }
 
 .text-container {
     text-align: center;
-    margin-top: -47px;
+    margin-top: -55px;
     margin-left: 47px;
     margin-right: 10px;
 }

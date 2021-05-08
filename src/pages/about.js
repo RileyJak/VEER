@@ -5,6 +5,7 @@ function About() {
 	return (
 		<>
 			<h1 className="about-title">About</h1>
+			<hr className="about-line" />
 			<p className="text">
 				VEER is an app designed to help guide you through the voting process, no
 				matter where you are in your voter journey. Through bite-sized lessons
@@ -52,15 +53,17 @@ function About() {
 				</div>
 			</div>
 
-			<h2 className="team-title">Our Team</h2>
-			<p className="text">
-				Matt Basil, Audree Borror, Chris Bowling, Tim Bradish, Rigo Cervantes,
-				Mackenzie Chernok, Artur Ciecierski, Anna Gingle, Jennica Yvonne
-				Hontiveros, Riley Jakusik, Vicki Lei, Sneh Mehta, Tyler Morales,
-				Christopher Morris, Beck Rivera, Cassi Seifert, Lourdes Serrano, Georgia
-				Swinand
-			</p>
-			<p className="text">In collaboration with Kin + Carta</p>
+			<div className="team-container">
+				<h2 className="team-title">Our Team</h2>
+				<p className="text">
+					Matt Basil, Audree Borror, Chris Bowling, Tim Bradish, Rigo Cervantes,
+					Mackenzie Chernok, Artur Ciecierski, Anna Gingle, Jennica Yvonne
+					Hontiveros, Riley Jakusik, Vicki Lei, Sneh Mehta, Tyler Morales,
+					Christopher Morris, Beck Rivera, Cassi Seifert, Lourdes Serrano,
+					Georgia Swinand
+				</p>
+				<p className="text">In collaboration with Kin + Carta</p>
+			</div>
 		</>
 	);
 }

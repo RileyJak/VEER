@@ -4,6 +4,7 @@ function Design() {
 	return (
 		<div>
 			<h1>Design</h1>
+			<hr />
 		</div>
 	);
 }

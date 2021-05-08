@@ -8,6 +8,7 @@ function Research() {
 	return (
 		<div>
 			<h1>Research</h1>
+			<hr />
 			<div className="grid-container">
 				<Card title="Research Summary" icon={fileIcon} doc={Doc1} />
 				<Card title="Research Summary" icon={fileIcon} doc={Doc1} />

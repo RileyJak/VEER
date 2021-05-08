@@ -26,7 +26,7 @@ function Nav() {
 
 			<ul className={`menuNav ${navbarOpen ? " showMenu" : ""}`}>
 				<div className="aContainer">
-					<Link className="link" to="/home" onClick={() => closeMenu()}>
+					<Link className="link" to="/" onClick={() => closeMenu()}>
 						<p className="nav-link">Home</p>
 					</Link>
 					<Link className="link" to="/research" onClick={() => closeMenu()}>
@@ -37,13 +37,6 @@ function Nav() {
 					</Link>
 					<Link className="link" to="/testing" onClick={() => closeMenu()}>
 						<p className="nav-link">Testing</p>
-					</Link>
-					<Link
-						className="link"
-						to="/presentations"
-						onClick={() => closeMenu()}
-					>
-						<p className="nav-link">Presentations</p>
 					</Link>
 					<Link className="link" to="/about" onClick={() => closeMenu()}>
 						<p className="nav-link">About</p>

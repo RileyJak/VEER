@@ -1,17 +1,31 @@
 .about-title {
     text-align: left;
     margin-left: 3rem;
-    margin-bottom: 1.25rem;
+    font-size: 2.75rem;
+    margin-bottom: 0;
+}
+
+.about-line {
+    margin-left: 3rem;
+    margin-bottom: 1.5rem;
+    width: 45%;
+    height: 7px;
+    color: #ff5e04;
+    background-color: #ff5e04;
+    border: none;
 }
 
 .text {
-    width: 60rem;
+    width: 70rem;
     margin-left: 5rem;
+    font-size: 1rem;
 }
 
 .subhead {
     text-align: center;
     margin-top: 2rem;
+    font-size: 2rem;
+    color: #422b67;
 }
 
 .container {
@@ -22,19 +36,25 @@
 .box {
     display: inline-block;
     width: 40%;
-    height: 8.3rem;
-    border: 1px solid black;
+    height: 10rem;
+    border: 2px solid #ff5e04;
     border-radius: 4px;
     vertical-align: top;
     margin-right: 50px;
-    padding: .25rem;
+    padding: .5rem;
+    font-size: 1rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+    color: #422b67;
 }
 
 .box-2 {
     display: inline-block;
     width: 30%;
     height: 8.3rem;
-    border: 1px solid black;
+    border: 2px solid #ff5e04;
     border-radius: 4px;
     vertical-align: top;
     margin-right: 20px;
@@ -46,4 +66,10 @@
     text-align: left;
     margin-left: 3rem;
     margin-bottom: 1.25rem;
+    color: #422b67;
+    font-size: 2rem;
+}
+
+.team-container {
+    margin-bottom: 2rem;
 }
