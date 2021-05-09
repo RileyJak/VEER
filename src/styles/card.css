@@ -1,37 +1,36 @@
 .card {
-    height: 3.1rem;
-    width: 18rem;
+    height: 4rem;
+    width: 19rem;
     border: 2px solid #ff5e04;
     border-radius: 4px;
-    padding: .2rem;
+    padding: .15rem;
     transition: all .06s ease-in-out;
     margin: 0 auto;
 }
 
 .card:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 .icon {
-    width: 4.5rem;
+    width: 5rem;
     display: inline-block;
-    margin-top: -11px;
-    margin-left: -15px;
-    margin-right: -5px;
+    margin-top: -8px;
+    margin-left: -16px;
     fill: #ff5e04;
 }
 
 .name {
     text-decoration: none;
     color: #422b67;
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 700;
     margin-bottom: 15px;
+    margin-left: 0px;
 }
 
 .text-container {
-    text-align: center;
     margin-top: -55px;
-    margin-left: 47px;
-    margin-right: 10px;
+    margin-left: 52px;
+    width: 90%;
 }

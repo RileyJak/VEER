@@ -38,6 +38,9 @@ function Nav() {
 					<Link className="link" to="/testing" onClick={() => closeMenu()}>
 						<p className="nav-link">Testing</p>
 					</Link>
+					<Link className="link" to="/critique" onClick={() => closeMenu()}>
+						<p className="nav-link">Critiques</p>
+					</Link>
 					<Link className="link" to="/about" onClick={() => closeMenu()}>
 						<p className="nav-link">About</p>
 					</Link>

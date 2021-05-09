@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./App.css";
 import Header from "./common/header";
 import About from "./pages/about";
+import Critique from "./pages/critique";
 import Design from "./pages/design";
 import Home from "./pages/home";
 import Research from "./pages/research";
@@ -26,6 +27,9 @@ function App() {
 				</Route>
 				<Route path="/about">
 					<About />
+				</Route>
+				<Route path="/critique">
+					<Critique />
 				</Route>
 			</Switch>
 		</BrowserRouter>
