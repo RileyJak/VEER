@@ -1,9 +1,9 @@
 .logo {
-    font-size: 1.3rem;
-    margin: 2rem;
+    width: 5rem;
     margin-left: 5px;
     left: 0;
     display: inline;
+    margin-top: -22px;
 }
 
 .header {

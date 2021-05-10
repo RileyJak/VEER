@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "../components/card";
 import "../styles/grid.css";
+
 // icons
 import pdf from "../assets/icons/PDF.svg";
 import img from "../assets/icons/IMG.svg";
@@ -32,6 +33,8 @@ import hm from "../assets/zips/Humor.zip";
 import ii from "../assets/zips/Internet Inequality.zip";
 import da from "../assets/zips/Disability and Accesibility.zip";
 import sd from "../assets/documents/Service Design Research.xlsx";
+import rd from "../assets/documents/Research Direction.docx";
+import rm from "../assets/documents/Research Methods.docx";
 
 function Research() {
 	return (
@@ -62,6 +65,8 @@ function Research() {
 				<Card title="Internet Inequality" icon={zip} doc={ii} />
 				<Card title="Disability and Accessibility" icon={zip} doc={da} />
 				<Card title="Service Design" icon={sheet} doc={sd} />
+				<Card title="Research Direction" icon={pdf} doc={rd} />
+				<Card title="Research Methods" icon={doc} doc={rm} />
 			</div>
 		</div>
 	);
