@@ -7,7 +7,7 @@ import logo from "../assets/pictures/logo.svg";
 function Header() {
 	return (
 		<div className="header">
-			<img className="logo" src={logo} />
+			<img className="logo" alt="veer logo" src={logo} />
 			<Nav />
 		</div>
 	);
