@@ -7,6 +7,7 @@ import zip from "../assets/icons/Zip.svg";
 
 //documents
 import cc from "../assets/zips/Client Critique .zip";
+import lc from "../assets/zips/Lauren Critique.zip";
 
 function Critique() {
 	return (
@@ -14,7 +15,13 @@ function Critique() {
 			<h1>Critique</h1>
 			<hr />
 			<div className="grid-container">
+				{/* Client Critique */}
 				<Card title="Client Critique" icon={zip} doc={cc} />
+
+				{/* Lauren Critique */}
+				<Card title="Lauren Critique" icon={zip} doc={lc} />
+
+				{/* Final Presentation Critique */}
 			</div>
 		</div>
 	);

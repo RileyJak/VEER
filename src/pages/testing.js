@@ -20,7 +20,10 @@ function Testing() {
 			<h1>Testing</h1>
 			<hr />
 			<div className="grid-container">
+				{/* Color Testing */}
 				<Card title="Color Testing" icon={zip} doc={ct} />
+
+				{/* User Testing */}
 				<Card title="User Testing Scripts" icon={zip} doc={uts} />
 				<Card title="User Testing Notes" icon={zip} doc={uin} />
 				<Card title="User Testing Synthesis 1" icon={img} doc={uts1} />

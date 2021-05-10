@@ -10,6 +10,7 @@ import doc from "../assets/icons/Google Doc.svg";
 import sheet from "../assets/icons/sheet.svg";
 
 //documents
+import uf from "../assets/zips/User Flow.zip";
 import rs from "../assets/documents/Research Synthesis.pdf";
 import is from "../assets/documents/Isolation and Suppression.pdf";
 import vs from "../assets/documents/Voting is Social.pdf";
@@ -44,22 +45,16 @@ function Research() {
 			<h1>Research</h1>
 			<hr />
 			<div className="grid-container">
+				{/* Synthesis */}
 				<Card title="Research Synthesis" icon={pdf} doc={rs} />
+				<Card title="Research Direction" icon={pdf} doc={rd} />
+				<Card title="Research Methods" icon={doc} doc={rm} />
+				<Card title="Project Direction" icon={doc} doc={pd} />
+
+				{/* Topics */}
 				<Card title="Isolation and Suppression" icon={pdf} doc={is} />
 				<Card title="Voting is Social" icon={pdf} doc={vs} />
 				<Card title="Voter Accessability" icon={pdf} doc={va} />
-				<Card title="Color Theory Notes" icon={zip} doc={ctn} />
-				<Card title="Color Theory Synthesis" icon={img} doc={cts} />
-				<Card title="Marketing Strategy" icon={pdf} doc={ms} />
-				<Card title="Competitive Analysis" icon={doc} doc={ca} />
-				<Card title="Competitive Analysis Synthesis" icon={pdf} doc={cas} />
-				<Card title="Audience" icon={doc} doc={aud} />
-				<Card title="Voter Journey Map" icon={img} doc={vj} />
-				<Card title="Subconscious Questions" icon={doc} doc={sq} />
-				<Card title="User Survey" icon={img} doc={su} />
-				<Card title="User Survey Results" icon={img} doc={sur} />
-				<Card title="User Survey Synthesis" icon={pdf} doc={ss} />
-				<Card title="Modes of Interaction" icon={img} doc={id} />
 				<Card title="Voting Norms" icon={doc} doc={vn} />
 				<Card title="Voter Suppression" icon={doc} doc={vsup} />
 				<Card title="Gerrymandering" icon={zip} doc={gm} />
@@ -67,10 +62,28 @@ function Research() {
 				<Card title="Internet Inequality" icon={zip} doc={ii} />
 				<Card title="Disability and Accessibility" icon={zip} doc={da} />
 				<Card title="Service Design" icon={sheet} doc={sd} />
-				<Card title="Research Direction" icon={pdf} doc={rd} />
-				<Card title="Research Methods" icon={doc} doc={rm} />
+
+				{/* Competitive Analysis and Interaction Comparison */}
+				<Card title="Modes of Interaction" icon={img} doc={id} />
+				<Card title="Competitive Analysis" icon={doc} doc={ca} />
+				<Card title="Marketing Strategy" icon={pdf} doc={ms} />
+				<Card title="Competitive Analysis Synthesis" icon={pdf} doc={cas} />
+
+				{/* User Survey */}
+				<Card title="Subconscious Questions" icon={doc} doc={sq} />
+				<Card title="User Survey" icon={img} doc={su} />
+				<Card title="User Survey Results" icon={img} doc={sur} />
+				<Card title="User Survey Synthesis" icon={pdf} doc={ss} />
+
+				{/* Audience and Maps and Personas and Flows */}
+				<Card title="Audience" icon={doc} doc={aud} />
 				<Card title="User Personas" icon={zip} doc={up} />
-				<Card title="Project Direction" icon={doc} doc={pd} />
+				<Card title="Voter Journey Map" icon={img} doc={vj} />
+				<Card title="User Flow" icon={zip} doc={uf} />
+
+				{/* Color */}
+				<Card title="Color Theory Notes" icon={zip} doc={ctn} />
+				<Card title="Color Theory Synthesis" icon={img} doc={cts} />
 			</div>
 		</div>
 	);

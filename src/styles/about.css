@@ -3,6 +3,8 @@
     margin-left: 3rem;
     font-size: 2.75rem;
     margin-bottom: 0;
+    font-weight: 700;
+    font-style: italic;
 }
 
 .about-line {
@@ -26,6 +28,7 @@
     margin-top: 2rem;
     font-size: 2rem;
     color: #422b67;
+    font-style: italic;
 }
 
 .container {
@@ -48,6 +51,7 @@
 h3 {
     font-size: 1.25rem;
     color: #422b67;
+    font-style: italic;
 }
 
 .box-2 {
@@ -68,6 +72,8 @@ h3 {
     margin-bottom: 1.25rem;
     color: #422b67;
     font-size: 2rem;
+    font-weight: 700;
+    font-style: italic;
 }
 
 .team-container {
