@@ -20,7 +20,13 @@ function Home() {
 			<div className="grid-home">
 				<Card title="Presentation Deck" icon={pdf} doc={hold} />
 				<Card title="Case Study" icon={pdf} doc={hold} />
-				<Card title="Prototype File" icon={link} doc={hold} />
+				<Card
+					title="Interactive Prototype"
+					icon={link}
+					doc={
+						"https://www.figma.com/proto/4QxsgOwL6bbNSwpEEzUoM7/IAM-Team-Spring-21-Content-Stuff?node-id=363%3A108&scaling=scale-down"
+					}
+				/>
 				<Card title="Prototype Video" icon={video} doc={hold} />
 			</div>
 		</div>
