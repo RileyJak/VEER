@@ -35,6 +35,8 @@ import da from "../assets/zips/Disability and Accesibility.zip";
 import sd from "../assets/documents/Service Design Research.xlsx";
 import rd from "../assets/documents/Research Direction.docx";
 import rm from "../assets/documents/Research Methods.docx";
+import up from "../assets/zips/User Personas.zip";
+import pd from "../assets/documents/Project Direction.docx";
 
 function Research() {
 	return (
@@ -67,6 +69,8 @@ function Research() {
 				<Card title="Service Design" icon={sheet} doc={sd} />
 				<Card title="Research Direction" icon={pdf} doc={rd} />
 				<Card title="Research Methods" icon={doc} doc={rm} />
+				<Card title="User Personas" icon={zip} doc={up} />
+				<Card title="Project Direction" icon={doc} doc={pd} />
 			</div>
 		</div>
 	);
