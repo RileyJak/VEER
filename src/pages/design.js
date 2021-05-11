@@ -26,10 +26,14 @@ import dn from "../assets/zips/Design Notes.zip";
 import mifi from "../assets/zips/Mid-Fi Prototype.zip";
 import con from "../assets/pictures/Contrast.png";
 
+//blob
+import blob from "../assets/Blobs/blob-02.svg";
+
 function Design() {
 	return (
 		<div>
 			<h1>Design</h1>
+			<img className="blob" src={blob} alt="blob" />
 			<hr />
 			<div className="grid-container">
 				{/* Prototypes */}

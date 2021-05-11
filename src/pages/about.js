@@ -1,10 +1,20 @@
 import React from "react";
 import "../styles/about.css";
 
+// blobs
+import blob1 from "../assets/Blobs/blob-01.svg";
+import blob2 from "../assets/Blobs/blob-02.svg";
+import blob3 from "../assets/Blobs/blob-03.svg";
+import blob4 from "../assets/Blobs/blob-04.svg";
+
 function About() {
 	return (
 		<>
 			<h1 className="about-title">About</h1>
+			<img className="blob" src={blob1} alt="blob" />
+			<img className="blob" src={blob2} alt="blob" />
+			<img className="blob" src={blob3} alt="blob" />
+			<img className="blob" src={blob4} alt="blob" />
 			<hr className="about-line" />
 			<p className="text">
 				VEER is an app designed to help guide you through the voting process, no

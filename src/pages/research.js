@@ -39,10 +39,14 @@ import rm from "../assets/documents/Research Methods.docx";
 import up from "../assets/zips/User Personas.zip";
 import pd from "../assets/documents/Project Direction.docx";
 
+//blob
+import blob from "../assets/Blobs/blob-01.svg";
+
 function Research() {
 	return (
 		<div>
 			<h1>Research</h1>
+			<img className="blob" src={blob} alt="blob" />
 			<hr />
 			<div className="grid-container">
 				{/* Synthesis */}

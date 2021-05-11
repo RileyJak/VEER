@@ -9,10 +9,14 @@ import zip from "../assets/icons/Zip.svg";
 import cc from "../assets/zips/Client Critique .zip";
 import lc from "../assets/zips/Lauren Critique.zip";
 
+//blob
+import blob from "../assets/Blobs/blob-04.svg";
+
 function Critique() {
 	return (
 		<div>
 			<h1>Critique</h1>
+			<img className="blob" src={blob} alt="blob" />
 			<hr />
 			<div className="grid-container">
 				{/* Client Critique */}

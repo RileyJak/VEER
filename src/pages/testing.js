@@ -14,10 +14,14 @@ import afd from "../assets/pictures/User Tests Affinity Diagram.png";
 import uin from "../assets/zips/User Testing Notes.zip";
 import uts from "../assets/zips/User Testing Scripts.zip";
 
+//blob
+import blob from "../assets/Blobs/blob-03.svg";
+
 function Testing() {
 	return (
 		<div>
 			<h1>Testing</h1>
+			<img className="blob" src={blob} alt="blob" />
 			<hr />
 			<div className="grid-container">
 				{/* Color Testing */}

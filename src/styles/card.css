@@ -1,7 +1,7 @@
 .card {
     height: 4rem;
     width: 19rem;
-    border: 2px solid #ff5e04;
+    border: 2px solid #F28440;
     border-radius: 4px;
     padding: .15rem;
     transition: all .06s ease-in-out;
@@ -17,7 +17,6 @@
     display: inline-block;
     margin-top: -8px;
     margin-left: -16px;
-    fill: #ff5e04;
 }
 
 .name {

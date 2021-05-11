@@ -6,7 +6,7 @@
     top: 1rem;
     margin-right: -30px;
     background-color: transparent;
-    color: #ff5e04 !important;
+    color: #F28440 !important;
     border: none;
     margin-top: -5px;
 }
@@ -28,7 +28,9 @@
 
 .menuNav.showMenu {
     width: 20%;
-    background-color: #422b67;
+    background-image: url("../assets/pictures/navbg.png");
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .aContainer {

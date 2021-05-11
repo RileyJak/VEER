@@ -6,26 +6,33 @@
 h1 {
     text-align: center;
     margin-bottom: 3rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
     color: #422b67;
     text-align: left;
     margin-left: 3rem;
     font-size: 2.75rem;
-    margin-bottom: 0;
+    margin-bottom: -1rem;
     font-weight: 700;
     font-style: italic;
+    float: left;
 }
 
 hr {
     margin-left: 3rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     width: 45%;
     height: 7px;
-    color: #ff5e04;
-    background-color: #ff5e04;
+    background: linear-gradient(to right, #F28440, #F18F52, #F99E66, #FAC4A2);
     border: none;
+    margin-top: -1.25rem;
 }
 
 p {
     color: #222222;
+}
+
+.blob {
+    height: 100px;
+    margin-top: -5px;
+    margin-left: 1rem;
 }
