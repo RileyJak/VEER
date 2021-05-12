@@ -25,6 +25,10 @@ import dsb from "../assets/pictures/Design System - Badges.png";
 import dn from "../assets/zips/Design Notes.zip";
 import mifi from "../assets/zips/Mid-Fi Prototype.zip";
 import con from "../assets/pictures/Contrast.png";
+import ds from "../assets/pictures/Designsys2.png";
+import bob from "../assets/zips/Blob Design Files.zip";
+import iss from "../assets/zips/Icons - Splash Background - Logo.zip";
+import hifi from "../assets/zips/Hi-Fi Mock up.zip";
 
 //blob
 import blob from "../assets/Blobs/blob-02.svg";
@@ -46,10 +50,13 @@ function Design() {
 				/>
 				<Card title="Lo-Fi Prototype" icon={zip} doc={lofi} />
 				<Card title="Mid-Fi Prototype" icon={zip} doc={mifi} />
+				<Card title="Hi-Fi Prototype" icon={zip} doc={hifi} />
 
 				{/* Design Systems */}
 				<Card title="Design System - Components" icon={img} doc={dsc} />
 				<Card title="Design System - Badges" icon={img} doc={dsb} />
+				<Card title="Final Design System" icon={img} doc={ds} />
+				<Card title="Icons, Logos, Splash" icon={zip} doc={iss} />
 
 				{/* Color */}
 				<Card title="Color Exploration" icon={pdf} doc={ColorEx} />
@@ -61,6 +68,7 @@ function Design() {
 
 				{/* Blob */}
 				<Card title="Blob Sketches" icon={zip} doc={Blob} />
+				<Card title="Blob Design Files" icon={zip} doc={bob} />
 				<Card title="Character Bible" icon={doc} doc={charbib} />
 
 				{/* Content */}

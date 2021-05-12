@@ -4,6 +4,7 @@ import "../styles/grid.css";
 
 //icons
 import zip from "../assets/icons/Zip.svg";
+import doc from "../assets/icons/Google Doc.svg";
 import img from "../assets/icons/IMG.svg";
 
 //documents
@@ -13,7 +14,7 @@ import uts2 from "../assets/pictures/Mid-Fi User Interview Synthesis Anna.jpg";
 import afd from "../assets/pictures/User Tests Affinity Diagram.png";
 import uin from "../assets/zips/User Testing Notes.zip";
 import uts from "../assets/zips/User Testing Scripts.zip";
-
+import fcs from "../assets/documents/Final Changes Synthesis.docx";
 //blob
 import blob from "../assets/Blobs/blob-03.svg";
 
@@ -33,6 +34,7 @@ function Testing() {
 				<Card title="User Testing Synthesis 1" icon={img} doc={uts1} />
 				<Card title="User Testing Synthesis 2" icon={img} doc={uts2} />
 				<Card title="User Testing Affinity Diagram" icon={img} doc={afd} />
+				<Card title="Final Changes Synthesis" icon={doc} doc={fcs} />
 			</div>
 		</div>
 	);
