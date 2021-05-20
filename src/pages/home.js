@@ -9,6 +9,7 @@ import link from "../assets/icons/Links.svg";
 
 //documents
 import deck from "../assets/documents/Veer - Deck.pdf";
+import ca from "../assets/documents/caseStudy.pdf";
 
 function Home() {
 	return (
@@ -27,7 +28,7 @@ function Home() {
 
 			<div className="grid-home">
 				<Card title="Presentation Deck" icon={pdf} doc={deck} />
-				<Card title="Case Study" icon={pdf} doc={deck} />
+				<Card title="Case Study" icon={pdf} doc={ca} />
 				<Card
 					title="Interactive Prototype"
 					icon={link}
