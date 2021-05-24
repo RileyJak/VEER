@@ -12,8 +12,9 @@ function App() {
 	return (
 		<BrowserRouter>
 			<Header />
-			<div className="selection-grid">
+			
 			<Switch>
+			<div className="selection-grid">
 				<Route path="/" exact>
 					<Home />
 				</Route>
@@ -32,8 +33,9 @@ function App() {
 				<Route path="/critique">
 					<Critique />
 				</Route>
+				</div>
 			</Switch>
-			</div>
+		
 		</BrowserRouter>
 	);
 }
