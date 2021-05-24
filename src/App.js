@@ -12,7 +12,10 @@ function App() {
 	return (
 		<BrowserRouter>
 			<Header />
+<<<<<<< HEAD
 			{/*Video header*/}
+=======
+>>>>>>> parent of 7fe9853 (Responsive design⚙️)
 			<Switch>
 				<div className="video-header">
 					<Route path="/" exact>
@@ -41,7 +44,10 @@ function App() {
 				</Route>
 				</div>
 			</Switch>
+<<<<<<< HEAD
 		
+=======
+>>>>>>> parent of 7fe9853 (Responsive design⚙️)
 		</BrowserRouter>
 	);
 }
