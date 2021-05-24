@@ -12,24 +12,15 @@ function App() {
 	return (
 		<BrowserRouter>
 			<Header />
-<<<<<<< HEAD
-			{/*Video header*/}
-=======
->>>>>>> parent of 7fe9853 (Responsive design⚙️)
+		
 			<Switch>
-				<div className="video-header">
 					<Route path="/" exact>
 						<Home />
 					</Route>
-				</div>
-				{/* Card selection */}
-				<div className="selection-grid">
-				<div className="selection-row">
+			
 					<Route path="/research">
 						<Research />
 					</Route>
-				</div>
-			
 				<Route path="/design">
 					<Design />
 				</Route>
@@ -41,13 +32,8 @@ function App() {
 				</Route>
 				<Route path="/critique">
 					<Critique />
-				</Route>
-				</div>
+			</Route>
 			</Switch>
-<<<<<<< HEAD
-		
-=======
->>>>>>> parent of 7fe9853 (Responsive design⚙️)
 		</BrowserRouter>
 	);
 }
