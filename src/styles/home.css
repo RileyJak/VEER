@@ -11,3 +11,17 @@
     margin-bottom: 0;
     margin-top: 0;
 }
+.selection-grid{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: red;
+    justify-content: center;
+}
+.selection-grid-row{
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    max-width: 1rem;
+    justify-content: center;
+}

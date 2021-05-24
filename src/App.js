@@ -12,15 +12,21 @@ function App() {
 	return (
 		<BrowserRouter>
 			<Header />
-			
+			{/*Video header*/}
 			<Switch>
-			<div className="selection-grid">
-				<Route path="/" exact>
-					<Home />
-				</Route>
-				<Route path="/research">
-					<Research />
-				</Route>
+				<div className="video-header">
+					<Route path="/" exact>
+						<Home />
+					</Route>
+				</div>
+				{/* Card selection */}
+				<div className="selection-grid">
+				<div className="selection-row">
+					<Route path="/research">
+						<Research />
+					</Route>
+				</div>
+			
 				<Route path="/design">
 					<Design />
 				</Route>
