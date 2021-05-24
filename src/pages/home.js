@@ -1,5 +1,8 @@
 import React from "react";
+import { makeStyles } from '@material-ui/core/styles';
+import Grid from '@material-ui/core/Grid';
 import Card from "../components/card";
+import PresentationVideo from "../components/presentation-video";
 import "../styles/home.css";
 
 //icons
@@ -14,17 +17,9 @@ import ca from "../assets/documents/caseStudy.pdf";
 function Home() {
 	return (
 		<div>
-			<div className="video">
-				<iframe
-					width="1350"
-					height="600"
-					src="https://www.youtube.com/embed/mJeQtW2n4rU"
-					title="YouTube video player"
-					frameborder="0"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-					allowfullscreen
-				></iframe>
-			</div>
+			 <Grid container spacing={3}>
+				 <PresentationVideo />
+			
 
 			<div className="grid-home">
 				<Card title="Presentation Deck" icon={pdf} doc={deck} />
@@ -42,6 +37,7 @@ function Home() {
 					doc={"https://youtu.be/dqiS6nK7n4k"}
 				/>
 			</div>
+			</Grid>
 		</div>
 	);
 }
