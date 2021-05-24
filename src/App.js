@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { makeStyles } from '@material-ui/core/styles';
 import "./App.css";
 import Header from "./common/header";
 import About from "./pages/about";

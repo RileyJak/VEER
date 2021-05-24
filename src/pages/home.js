@@ -4,7 +4,7 @@ import Grid from '@material-ui/core/Grid';
 import Card from "../components/card";
 import PresentationVideo from "../components/presentation-video";
 import "../styles/home.css";
-
+import Container from '@material-ui/core/Container';
 //icons
 import pdf from "../assets/icons/PDF.svg";
 import video from "../assets/icons/Video.svg";
@@ -13,16 +13,20 @@ import link from "../assets/icons/Links.svg";
 //documents
 import deck from "../assets/documents/Veer - Deck.pdf";
 import ca from "../assets/documents/caseStudy.pdf";
+import classes from "*.module.css";
 
 function Home() {
 	return (
-		<div>
+			<div className={classes.root}> 
 			 <Grid container spacing={3}>
-				 <PresentationVideo />
+				  <Grid item xs={12}>
+				  <PresentationVideo />
+				  </Grid>
 			
+				<Grid item xs={12} sm={6}>
+					<Card title="Presentation Deck" icon={pdf} doc={deck} />
+				</Grid>
 
-			<div className="grid-home">
-				<Card title="Presentation Deck" icon={pdf} doc={deck} />
 				<Card title="Case Study" icon={pdf} doc={ca} />
 				<Card
 					title="Interactive Prototype"
@@ -36,9 +40,11 @@ function Home() {
 					icon={video}
 					doc={"https://youtu.be/dqiS6nK7n4k"}
 				/>
-			</div>
+	
+
 			</Grid>
-		</div>
+			</div>
+
 	);
 }
 

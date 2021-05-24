@@ -1,11 +1,25 @@
 import React from "react";
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
+import Paper from '@material-ui/core/Paper';
+import Container from '@material-ui/core/Container';
+
 
 const useStyles = makeStyles((theme) => ({
 	root: {
 	  flexGrow: 1,
 	},
+
+  presentation: {
+
+    padding: theme.spacing(12),
+  
+    justifyContent: 'center',
+    height: 140,
+    width: 100,
+    justifyContent: 'center',
+
+  },
 	
   }));
 
@@ -13,8 +27,15 @@ const useStyles = makeStyles((theme) => ({
     const classes = useStyles();
     
     return (
-        <div className={classes.root}>
+
+
+
           <Grid item xs={12}>
+      
+
+           
+
+            <div className={classes.presentation}>
             <iframe
               width="1350"
               height="600"
@@ -24,7 +45,12 @@ const useStyles = makeStyles((theme) => ({
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
               ></iframe>
-        </Grid>
-        </div>
+            </div>
+  
+
+          </Grid>
+
+
+     
     );
 }
