@@ -12,6 +12,7 @@ function App() {
 	return (
 		<BrowserRouter>
 			<Header />
+			<div className="selection-grid">
 			<Switch>
 				<Route path="/" exact>
 					<Home />
@@ -32,6 +33,7 @@ function App() {
 					<Critique />
 				</Route>
 			</Switch>
+			</div>
 		</BrowserRouter>
 	);
 }
