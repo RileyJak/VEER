@@ -13,7 +13,7 @@ import link from "../assets/icons/Links.svg";
 //documents
 import deck from "../assets/documents/Veer - Deck.pdf";
 import ca from "../assets/documents/caseStudy.pdf";
-import classes from "*.module.css";
+{/*import classes from "*.module.css";*/}
 
 function Home() {
 	return (
