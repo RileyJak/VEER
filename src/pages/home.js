@@ -1,10 +1,17 @@
 import React from "react";
+//material ui
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Card from "../components/card";
-import PresentationVideo from "../components/presentation-video";
-import "../styles/home.css";
 import Container from '@material-ui/core/Container';
+
+
+//componets
+import PresentationVideo from "../components/presentation-video";
+
+//styles
+import "../styles/home.css";
+
 //icons
 import pdf from "../assets/icons/PDF.svg";
 import video from "../assets/icons/Video.svg";
@@ -13,11 +20,22 @@ import link from "../assets/icons/Links.svg";
 //documents
 import deck from "../assets/documents/Veer - Deck.pdf";
 import ca from "../assets/documents/caseStudy.pdf";
-{/*import classes from "*.module.css";*/}
 
+import { Redirect } from "react-router";
+
+const useStyles = makeStyles((theme) => ({
+	root: {
+	  flexGrow: 1,
+	},
+	paper: {
+	  padding: theme.spacing(2),
+	  textAlign: 'center',
+	  color: theme.palette.text.secondary,
+	},
+  }));
 function Home() {
 	return (
-			<div className={classes.root}> 
+			<div> 
 			 <Grid container spacing={3}>
 				  <Grid item xs={12}>
 				  <PresentationVideo />
