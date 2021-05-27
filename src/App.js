@@ -10,18 +10,22 @@ import Research from "./pages/research";
 import Testing from "./pages/testing";
 
 function App() {
+	const history = createBrowserHistory({
+		basename: process.env.PUBLIC_URL,
+	});
 	return (
 		<BrowserRouter>
 			<Header />
-		
 			<Switch>
-					<Route path="/" exact>
+				<history>
+					<Route path="/" history>
 						<Home />
 					</Route>
-			
-					<Route path="/research">
-						<Research />
-					</Route>
+				</history>
+
+				<Route path="/research">
+					<Research />
+				</Route>
 				<Route path="/design">
 					<Design />
 				</Route>
@@ -33,7 +37,7 @@ function App() {
 				</Route>
 				<Route path="/critique">
 					<Critique />
-			</Route>
+				</Route>
 			</Switch>
 		</BrowserRouter>
 	);
