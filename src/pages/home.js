@@ -43,6 +43,7 @@ const useStyles = makeStyles((theme) => ({
 		muiGridgridxs6: {
 		  // Some CSS
 		  flexBasis: '0%',
+		  justify: 'space-evenly',
 		},
 	  },
 	},
@@ -52,35 +53,40 @@ function Home() {
 	return (
 	
 		<div className={classes.root}>
+			
+		<Grid container spacing={6}>
 
-		<Grid container spacing={2}>
+				<Grid item lg={12}>
+					<Container>
+						<PresentationVideo />
+					</Container>
+				</Grid>
 
-				<Grid item xs={6}>
+
+				<Grid item md={6}>
 					<Container>
 					<Card  title="Presentation Deck" icon={pdf} doc={deck} className={classes.paper}>xs=6 </Card>
 					</Container>
-				
-					
 				</Grid>
 
-				<Grid item xs={6}>
+				<Grid item md={6}>
 					<Container>
 						<Card title="Case Study" icon={pdf} doc={ca} className={classes.card}>xs=6 </Card>
 					</Container>
 				</Grid>
 
-				<Grid item xs={6}>
-				<Container>
-				<Card
-					title="Interactive Prototype"
-					icon={link}
-					doc={
-						"https://www.figma.com/proto/4QxsgOwL6bbNSwpEEzUoM7/Veer-Prototype-Final-Version?page-id=363%3A0&node-id=363%3A108&viewport=420%2C648%2C0.053420539945364&scaling=scale-down"
-					} className={classes.paper}>xs=6 </Card>
-				</Container>
+				<Grid item md={6}>
+					<Container>
+						<Card
+							title="Interactive Prototype"
+							icon={link}
+							doc={
+								"https://www.figma.com/proto/4QxsgOwL6bbNSwpEEzUoM7/Veer-Prototype-Final-Version?page-id=363%3A0&node-id=363%3A108&viewport=420%2C648%2C0.053420539945364&scaling=scale-down"
+							} className={classes.paper}>xs=6 </Card>
+					</Container>
 				</Grid>
 
-				<Grid item xs={6}>
+				<Grid item md={6}>
 					<Container>
 						<Card
 							title="Prototype Video"
