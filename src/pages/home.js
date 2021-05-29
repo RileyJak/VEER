@@ -5,6 +5,7 @@ import Grid from '@material-ui/core/Grid';
 import Card from "../components/card";
 import Container from '@material-ui/core/Container';
 import Paper from '@material-ui/core/Paper';
+import { createMuiTheme } from '@material-ui/core/styles';
 
 //componets
 import PresentationVideo from "../components/presentation-video";
@@ -27,14 +28,25 @@ const useStyles = makeStyles((theme) => ({
 	root: {
 	  flexGrow: 1,
 	},
-	card: {
-	  padding: theme.spacing(2),
-	  textAlign: 'center',
-	  color: theme.palette.text.secondary,
-	  
+	grid: {
+		alignContent: 'space-between',
+		justifyContent: 'center',
+		flexBasis:  '0%',
 	},
+	
   }));
-  
+  const theme = createMuiTheme({
+	overrides: {
+	  // Style sheet name ⚛️
+	  muigrid: {
+		// Name of the rule
+		muiGridgridxs6: {
+		  // Some CSS
+		  flexBasis: '0%',
+		},
+	  },
+	},
+  });
 function Home() {
 	const classes = useStyles();
 	return (
@@ -52,24 +64,30 @@ function Home() {
 				</Grid>
 
 				<Grid item xs={6}>
-					<Card title="Case Study" icon={pdf} doc={ca} className={classes.card}>xs=6 </Card>
+					<Container>
+						<Card title="Case Study" icon={pdf} doc={ca} className={classes.card}>xs=6 </Card>
+					</Container>
 				</Grid>
 
 				<Grid item xs={6}>
+				<Container>
 				<Card
 					title="Interactive Prototype"
 					icon={link}
 					doc={
 						"https://www.figma.com/proto/4QxsgOwL6bbNSwpEEzUoM7/Veer-Prototype-Final-Version?page-id=363%3A0&node-id=363%3A108&viewport=420%2C648%2C0.053420539945364&scaling=scale-down"
 					} className={classes.paper}>xs=6 </Card>
+				</Container>
 				</Grid>
 
 				<Grid item xs={6}>
-				<Card
-					title="Prototype Video"
-					icon={video}
-					doc={"https://youtu.be/dqiS6nK7n4k"}
-					className={classes.paper}>xs=6 </Card>
+					<Container>
+						<Card
+							title="Prototype Video"
+							icon={video}
+							doc={"https://youtu.be/dqiS6nK7n4k"}
+							className={classes.paper}>xs=6 </Card>
+					</Container>
 				</Grid>
 	</Grid>
 	</div>

@@ -25,3 +25,8 @@
     max-width: 1rem;
     justify-content: center;
 }
+
+.MuiGrid-grid-xs-6 {
+ 
+    flex-basis: 0%;
+}
