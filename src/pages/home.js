@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Card from "../components/card";
 import Container from '@material-ui/core/Container';
-
+import Paper from '@material-ui/core/Paper';
 
 //componets
 import PresentationVideo from "../components/presentation-video";
@@ -27,41 +27,54 @@ const useStyles = makeStyles((theme) => ({
 	root: {
 	  flexGrow: 1,
 	},
-	paper: {
+	card: {
 	  padding: theme.spacing(2),
 	  textAlign: 'center',
 	  color: theme.palette.text.secondary,
+	  
 	},
   }));
+  
 function Home() {
+	const classes = useStyles();
 	return (
-			<div> 
-			 <Grid container spacing={3}>
-				  <Grid item xs={12}>
-				  <PresentationVideo />
-				  </Grid>
-			
-				<Grid item xs={12} sm={6}>
-					<Card title="Presentation Deck" icon={pdf} doc={deck} />
+	
+		<div className={classes.root}>
+
+		<Grid container spacing={2}>
+
+				<Grid item xs={6}>
+					<Container>
+					<Card  title="Presentation Deck" icon={pdf} doc={deck} className={classes.paper}>xs=6 </Card>
+					</Container>
+				
+					
 				</Grid>
 
-				<Card title="Case Study" icon={pdf} doc={ca} />
+				<Grid item xs={6}>
+					<Card title="Case Study" icon={pdf} doc={ca} className={classes.card}>xs=6 </Card>
+				</Grid>
+
+				<Grid item xs={6}>
 				<Card
 					title="Interactive Prototype"
 					icon={link}
 					doc={
 						"https://www.figma.com/proto/4QxsgOwL6bbNSwpEEzUoM7/Veer-Prototype-Final-Version?page-id=363%3A0&node-id=363%3A108&viewport=420%2C648%2C0.053420539945364&scaling=scale-down"
-					}
-				/>
+					} className={classes.paper}>xs=6 </Card>
+				</Grid>
+
+				<Grid item xs={6}>
 				<Card
 					title="Prototype Video"
 					icon={video}
 					doc={"https://youtu.be/dqiS6nK7n4k"}
-				/>
-	
+					className={classes.paper}>xs=6 </Card>
+				</Grid>
+	</Grid>
+	</div>
 
-			</Grid>
-			</div>
+		
 
 	);
 }

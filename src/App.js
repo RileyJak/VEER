@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import { makeStyles } from '@material-ui/core/styles';
 import { createBrowserHistory } from "history";
+import { makeStyles } from '@material-ui/core/styles';
+
 import "./App.css";
 import Header from "./common/header";
 import About from "./pages/about";
@@ -11,18 +12,22 @@ import Research from "./pages/research";
 import Testing from "./pages/testing";
 
 function App() {
+	const history = createBrowserHistory({
+		basename: process.env.PUBLIC_URL,
+	});
 	return (
 		<BrowserRouter>
 			<Header />
-		
 			<Switch>
-					<Route path="/" exact>
+				<history>
+					<Route path="/" history>
 						<Home />
 					</Route>
-			
-					<Route path="/research">
-						<Research />
-					</Route>
+				</history>
+
+				<Route path="/research">
+					<Research />
+				</Route>
 				<Route path="/design">
 					<Design />
 				</Route>
@@ -34,7 +39,7 @@ function App() {
 				</Route>
 				<Route path="/critique">
 					<Critique />
-			</Route>
+				</Route>
 			</Switch>
 		</BrowserRouter>
 	);
