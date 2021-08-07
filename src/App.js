@@ -9,16 +9,14 @@ import Research from "./pages/research";
 import Testing from "./pages/testing";
 
 function App() {
-	
 	return (
 		<BrowserRouter>
 			<Header />
 			<Switch>
-			
-					<Route path="/" exact>
-						<Home />
-					</Route>
-	
+				<Route path="/" exact>
+					<Home />
+				</Route>
+
 				<Route path="/research">
 					<Research />
 				</Route>
