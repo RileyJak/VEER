@@ -1,5 +1,4 @@
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import { createBrowserHistory } from "history";
 import "./App.css";
 import Header from "./common/header";
 import About from "./pages/about";
@@ -10,18 +9,16 @@ import Research from "./pages/research";
 import Testing from "./pages/testing";
 
 function App() {
-	const history = createBrowserHistory({
-		basename: process.env.PUBLIC_URL,
-	});
+	
 	return (
 		<BrowserRouter>
 			<Header />
 			<Switch>
-				<history>
-					<Route path="/" history>
+			
+					<Route path="/" exact>
 						<Home />
 					</Route>
-				</history>
+	
 				<Route path="/research">
 					<Research />
 				</Route>
